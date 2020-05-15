@@ -207,13 +207,13 @@ const artists = [
 
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
-console.log(artists[0]);
-console.log(artists[2].bio);
+console.log(artists[0].name);
+// console.log(artists[2].bio);
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
-artists[8].name = 'Vincent Van Gogh';
-console.log(artists[8].name)
+// artists[8].name = 'Vincent Van Gogh';
+// console.log(artists[8].name)
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -227,7 +227,7 @@ function getArtistByIndex(array, index) {
     const artistVal = array[index];
     return `The artist at index ${artistVal.id} is ${artistVal.name}.`
   }
-  console.log(getArtistByIndex(artists, 0));
+  // console.log(getArtistByIndex(artists, 0));
   /**
 
 
@@ -244,7 +244,7 @@ function removeArtist(array, index) {
       console.log(artists[0]);
     
   }
-  removeArtist( artists, 0)
+  // removeArtist( artists, 0)
 
   /**
 
@@ -262,7 +262,7 @@ function lotsOfArt(array){
     /* Code here */
 
   }
-  console.log(lotsOfArt(artists))
+  // console.log(lotsOfArt(artists))
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
 
@@ -285,8 +285,8 @@ function addArtist(newArtist){
     /* Code here */
 
   }
-addArtist(danny);
-  console.log(artists[20]);
+// addArtist(danny);
+// console.log(artists[20]);
 
 
 
