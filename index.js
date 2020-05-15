@@ -272,13 +272,21 @@ years: Your Birth Year - current day,
 genre: Web Design, 
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
-
-function addArtist(/* Code here */){
-
+const danny = {
+  'id': 20,
+  'name': 'Daniel Hoesle', 
+  'years': '1996' - 'May 15, 2020',
+  'genre': 'Web Design', 
+  'nationality': 'Filipino, American',
+  'bio': 'or use lorem ipsum'
+}
+function addArtist(newArtist){
+    artists.push(newArtist);
     /* Code here */
 
   }
-
+addArtist(danny);
+  console.log(artists[20]);
 
 
 
