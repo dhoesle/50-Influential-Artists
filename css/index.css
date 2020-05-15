@@ -96,6 +96,11 @@ nav {
   align-items: center;
   padding: 3%;
 }
+@media (max-width: 500px) {
+  nav {
+    padding: 6%;
+  }
+}
 nav a {
   font-size: 3rem;
   padding: 0 1%;
