@@ -1,17 +1,65 @@
 .title-container{
-    .displayFlex(center,center);
-    background-color:blue;
-    flex-direction:column;
-    h1{
-        font-size: 5rem;
-        text-align:center;
-        padding: 1%;
+    .borderBottom();
+    border-width: 90%;
+    .displayFlex(center, center);
+    width: 100%;
+    // background-color:orange;
+    .content-container{
+        .displayFlex(center,center);
+        // background-color:blue;
+        flex-direction:column;
+        h1{
+            font-size: 5rem;
+            text-align:center;
+            padding: 1%;
+            color:white;
+            font-weight:bold;
+        }
+        button{
+            .button(2rem, white);
+        }
+        background-image: url(https://picsum.photos/1300/700);
+        width: 80%;
+        height: 70vh;
+        margin:3% 5%;
+        text-align: center;
     }
-    button{
-        padding:0.5% 2%;
-        font-size:2rem;
-        border-radius:.5rem;
-
+}
+.artists-container{
+    .displayFlex(space-around, flex-start);
+    flex-direction:row;
+    padding:2% 5%;
+    .artist {
+        width:45%;
+        // background-color:pink;
+        .displayFlex(center,center);
+        flex-direction: column;
+        img{
+            width: 80%;
+            height:auto;
+            border-radius:.5rem;
+        }
+        a {
+            font-size: 3rem;
+            padding: 3% 0 2% 0;
+            text-decoration:none;
+            color:black;
+        }
+        p {
+            font-size: 1.7rem;
+            padding:2%;
+            text-align:center;
+        }
     }
-    
+    // .artistTurn {
+    //     width: 50%;
+    //     background-color:pink;
+    //     .displayFlex(center,center);
+    //     flex-direction: column;
+    //     img{
+    //         width: 80%;
+    //         height:auto;
+    //         border-radius: 1rem;
+    //     }
+    // }
 }

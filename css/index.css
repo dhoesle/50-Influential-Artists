@@ -88,39 +88,80 @@ video {
 }
 html {
   font-size: 62.5%;
+  font-family: arial;
 }
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
   padding: 3%;
 }
 nav a {
   font-size: 3rem;
   padding: 0 1%;
-  border-right: 0.4rem solid black;
+  border-right: 0.3rem solid black;
   text-decoration: none;
   color: black;
-  background-color: green;
 }
 nav a:last-child {
   border-right: none;
 }
+nav a:first-child {
+  font-weight: bold;
+}
 .title-container {
+  border-bottom: 2px solid lightgray;
+  border-width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
-  flex-direction: column;
+  width: 100%;
 }
-.title-container h1 {
+.title-container .content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://picsum.photos/1300/700);
+  width: 80%;
+  height: 70vh;
+  margin: 3% 5%;
+  text-align: center;
+}
+.title-container .content-container h1 {
   font-size: 5rem;
   text-align: center;
   padding: 1%;
+  color: white;
+  font-weight: bold;
 }
-.title-container button {
-  padding: 0.5% 2%;
-  font-size: 2rem;
+.artists-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 2% 5%;
+}
+.artists-container .artist {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.artists-container .artist img {
+  width: 80%;
+  height: auto;
   border-radius: 0.5rem;
+}
+.artists-container .artist a {
+  font-size: 3rem;
+  padding: 3% 0 2% 0;
+  text-decoration: none;
+  color: black;
+}
+.artists-container .artist p {
+  font-size: 1.7rem;
+  padding: 2%;
+  text-align: center;
 }
